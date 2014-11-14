@@ -13,7 +13,7 @@ end;
 
 function checkMD()
   if ((os.time() - initialMD) < interval) then -- check if new MDs are comming
-    -- devices[event.device].AddNote{note="MDs are still comming"};
+    devices[event.device].AddNote{note="MDs are still comming"};
   else
     devices[event.device].AddNote{note="Manual recording stopped"};
     devices[event.device].ManualRecordingStop(); -- end of manual recoring
