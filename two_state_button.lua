@@ -1,8 +1,8 @@
 -- Use Activation by Button event "Manual (triggered by action button)"
 
 if (status == 0 or status == nil) then
+  log("Button ON");
   status = 2;
-  log("Button ON"); 
   -- place your ON action here; 
   -- devices.test.AdminCGI{path="/cgi-bin/admin/setparam.cgi?ircutcontrol_disableirled=1"};
 end
