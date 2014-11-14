@@ -12,7 +12,7 @@ local function toDebugString(a, indent)
 		else
 			return tostring(a)
 		end
-end
+end 
 
 for key, item in pairs(devices) do
       logf("%s -> %s", key, toDebugString(item, 0))
